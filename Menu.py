@@ -7,6 +7,10 @@ def get_companyName():
     companyName=input(str("Input your company name: "))
     return companyName
 
+def get_country():
+    country=input(str("Please enter your country: "))
+    return country
+
 def assests():
     assestsValue=input(float("Input the total depreciation and armotization value of your assests: "))
     return assestsValue
@@ -36,6 +40,14 @@ def get_EmpLessThan30():
 def calculate_taxable_income(income, assets, expenses):
     gross_income = income - (assets + expenses)
     return gross_income * 0.28
+
+def tax_estimation():
+    get_companyName()
+    get_country()
+    assests()
+    income()
+    expenses()
+    calculate_taxable_income()
 
 def get_business_info():
     on_display()
